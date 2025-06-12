@@ -1,0 +1,57 @@
+index.html
+html
+CopiarEditar
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solitario en JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Solitario</h1>
+  <button id="nuevo-juego">Nuevo Juego</button>
+  <div id="mesa">
+    <!-- Aquí aparecerán las cartas -->
+</div>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
+style.css
+css
+CopiarEditar
+body {
+  background-color: green;
+  font-family: sans-serif;
+  text-align: center;
+}
+#mesa {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 80vh;
+}
+.carta {
+  width: 80px;
+  height: 120px;
+  margin: 5px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+
+   user-select: none;
+}
+.carta.roja {
+  color: red;
+}
+.carta.negra {
+  color: black;
+}
